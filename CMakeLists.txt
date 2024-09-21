@@ -62,8 +62,8 @@ target_link_libraries(stlthumbnail
 # This path works on Arch
 install(TARGETS stlthumbnail DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6/thumbcreator/)
 # This path works on Debian / Ubuntu
-#install(TARGETS stlthumbnail DESTINATION ${LIB_INSTALL_DIR}/qt6/plugins/)
-#install(FILES stlthumbnail.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS stlthumbnail DESTINATION ${LIB_INSTALL_DIR}/qt6/plugins/)
+install(FILES stlthumbnail.desktop DESTINATION ${SERVICES_INSTALL_DIR})
 
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_VERSION_MAJOR 0)
